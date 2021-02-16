@@ -1,0 +1,19 @@
+.container{
+    margin-top: 100px;
+    flex: auto;
+    text-align: center;
+}
+.field{
+    width: 200px;
+    margin: auto ;
+}
+#nombre{
+    text-align: right;
+}
+#boutons{
+    margin-top: 50px;
+}
+#IMC{
+    display: none;
+    width : 300px;
+}

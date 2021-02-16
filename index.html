@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bulma cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- mon style -->
+    <link rel="stylesheet" href="style.css">
+    <title>Tuto IMC </title>
+</head>
+<body>
+    <div class="container" id="formulaire">
+        <h1 class="title is-2"> Calcul de l'IMC</h1>
+            <div class="field">
+                <label class="label">Taille en cm</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input is-link nombre has-icons-left" type="number" value="150" id="Taille">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-male"></i>
+                </span>
+                </div>
+            </div>
+          
+          <div class="field">
+            <label class="label">Poids en kg </label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success nombre has-text-left" type="number"  value="50" id="Poids">
+              <span class="icon is-small is-left">
+                <i class="fas fa-weight"></i>
+              </span>
+          <div class="field is-grouped" id="boutons">
+            <div class="control">
+              <button class="button is-link" id="Submit">Valider</button>
+            </div>
+            <div class="control">
+              <button class="button is-link is-light" id="Reset">Reset</button>
+            </div>
+          </div>
+          <section>
+              <div class="content is-large has-text-danger" id="IMC">
+                EE
+              </div>
+          </section>
+    </div>
+
+    <!-- lien javascipt -->
+    <script src="./main.js"></script>
+</body>
+</html>
